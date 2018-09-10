@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "570a8d60-d318-4105-a3ef-ef3c0833bb0d",
+		"_postman_id": "ab34314a-6ba5-4930-af79-9cb5d38a96a3",
 		"name": "spring-cloud-demo",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -10,7 +10,10 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "http://localhost:8001/rooms",
 					"protocol": "http",
@@ -30,7 +33,10 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "http://localhost:8001/rooms?roomNumber=P3",
 					"protocol": "http",
@@ -46,6 +52,29 @@
 							"key": "roomNumber",
 							"value": "P3"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8001:swagger-ui",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8001/swagger-ui.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"swagger-ui.html"
 					]
 				}
 			},
