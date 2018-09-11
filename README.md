@@ -6,5 +6,7 @@ https://github.com/svlugovoy/configs
 
 8101 - room-services
 
+8761 - eureka-server
+
 
 
