@@ -23,6 +23,12 @@ https://github.com/svlugovoy/configs
 
 [http://localhost:9000/reservationbusinessservices/default](http://localhost:9000/reservationbusinessservices/default)
 
+[http://localhost:8500/hystrix](http://localhost:8500/hystrix)
+
+localhost:8500/actuator/hystrix.stream -> Monitor Stream
+
+https://stackoverflow.com/questions/49792290/unable-to-connect-to-command-metric-stream-for-hystrix-dashboard-with-spring-clo
+
 **8600** - reservation-app
 
 [http://localhost:8600/reservations?date=2017-01-01](http://localhost:8600/reservations?date=2017-01-01)
