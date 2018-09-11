@@ -104,7 +104,7 @@
 			"response": []
 		},
 		{
-			"name": "8001:getAllRoms?roomNumber",
+			"name": "8101:getAllRoms?roomNumber",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -127,6 +127,29 @@
 							"key": "roomNumber",
 							"value": "P3"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8500:getAllRoms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8500/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8500",
+					"path": [
+						"rooms"
 					]
 				}
 			},

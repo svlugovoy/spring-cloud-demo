@@ -8,5 +8,6 @@ https://github.com/svlugovoy/configs
 
 8761 - eureka-server
 
+8500 - reservation-business-services
 
 
