@@ -133,6 +133,30 @@
 			"response": []
 		},
 		{
+			"name": "8500:getAllRoms-rt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8500/rt/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8500",
+					"path": [
+						"rt",
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "8500:getAllRoms",
 			"request": {
 				"method": "GET",
