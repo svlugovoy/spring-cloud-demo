@@ -133,6 +133,128 @@
 			"response": []
 		},
 		{
+			"name": "8102:getAllGuests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8102/guests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"guests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8102:getGuestBiId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8102/guests/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"guests",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8103:getAllReservations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8103/reservations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"reservations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8103:getAllReservations?date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8103/reservations?date=2017-01-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"reservations"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2017-01-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8500:getAllRoms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8500/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8500",
+					"path": [
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "8500:getAllRoms-rt",
 			"request": {
 				"method": "GET",
@@ -157,7 +279,7 @@
 			"response": []
 		},
 		{
-			"name": "8500:getAllRoms",
+			"name": "8500:roomReservations/{date}",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -166,14 +288,44 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8500/rooms",
+					"raw": "http://localhost:8500/roomReservations/2017-01-01",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8500",
 					"path": [
-						"rooms"
+						"roomReservations",
+						"2017-01-01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8600:getReservations?date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8600/reservations?2017-01-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8600",
+					"path": [
+						"reservations"
+					],
+					"query": [
+						{
+							"key": "2017-01-01",
+							"value": null
+						}
 					]
 				}
 			},
